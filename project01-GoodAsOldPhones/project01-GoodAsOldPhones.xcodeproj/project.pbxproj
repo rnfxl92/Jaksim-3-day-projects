@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		343FFF5E2619E134003104C2 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FFF5D2619E134003104C2 /* ProductDetailViewController.swift */; };
 		343FFF622619E64A003104C2 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FFF612619E64A003104C2 /* ContactViewController.swift */; };
+		343FFF682619F8B2003104C2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 343FFF672619F8B2003104C2 /* README.md */; };
 		345BCBFF2619D1AF009F3FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BCBFE2619D1AF009F3FC7 /* AppDelegate.swift */; };
 		345BCC012619D1AF009F3FC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BCC002619D1AF009F3FC7 /* SceneDelegate.swift */; };
 		345BCC062619D1AF009F3FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345BCC042619D1AF009F3FC7 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		343FFF5D2619E134003104C2 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		343FFF612619E64A003104C2 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		343FFF672619F8B2003104C2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		345BCBFB2619D1AF009F3FC7 /* project01-GoodAsOldPhones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project01-GoodAsOldPhones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		345BCBFE2619D1AF009F3FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345BCC002619D1AF009F3FC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		345BCBF22619D1AF009F3FC7 = {
 			isa = PBXGroup;
 			children = (
+				343FFF672619F8B2003104C2 /* README.md */,
 				345BCBFD2619D1AF009F3FC7 /* project01-GoodAsOldPhones */,
 				345BCBFC2619D1AF009F3FC7 /* Products */,
 			);
@@ -135,6 +138,7 @@
 			files = (
 				345BCC0B2619D1B1009F3FC7 /* LaunchScreen.storyboard in Resources */,
 				345BCC082619D1B1009F3FC7 /* Assets.xcassets in Resources */,
+				343FFF682619F8B2003104C2 /* README.md in Resources */,
 				345BCC062619D1AF009F3FC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
