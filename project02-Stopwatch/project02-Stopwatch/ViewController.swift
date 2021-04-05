@@ -139,6 +139,9 @@ extension ViewController: UITableViewDataSource {
         let identifier = "lapCell"
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
+        
+        cell.textLabel?.text = "  Lap \(laps.count - indexPath.row)       \(laps[laps.count - indexPath.row - 1])"
+        
         return cell
     }
     

@@ -15,6 +15,7 @@
 		34747CF5261ADA7C0066EB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34747CF3261ADA7C0066EB00 /* LaunchScreen.storyboard */; };
 		34747D00261AE1000066EB00 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34747CFF261AE1000066EB00 /* Stopwatch.swift */; };
 		34747D03261AEED20066EB00 /* Selector+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34747D02261AEED20066EB00 /* Selector+Timer.swift */; };
+		34747D06261AFE400066EB00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 34747D05261AFE400066EB00 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		34747CF6261ADA7C0066EB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34747CFF261AE1000066EB00 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		34747D02261AEED20066EB00 /* Selector+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selector+Timer.swift"; sourceTree = "<group>"; };
+		34747D05261AFE400066EB00 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		34747CDC261ADA7B0066EB00 = {
 			isa = PBXGroup;
 			children = (
+				34747D05261AFE400066EB00 /* README.md */,
 				34747CE7261ADA7B0066EB00 /* project02-Stopwatch */,
 				34747CE6261ADA7B0066EB00 /* Products */,
 			);
@@ -132,6 +135,7 @@
 			files = (
 				34747CF5261ADA7C0066EB00 /* LaunchScreen.storyboard in Resources */,
 				34747CF2261ADA7C0066EB00 /* Assets.xcassets in Resources */,
+				34747D06261AFE400066EB00 /* README.md in Resources */,
 				34747CF0261ADA7B0066EB00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
