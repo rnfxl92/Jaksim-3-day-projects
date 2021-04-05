@@ -61,7 +61,27 @@ class ViewController: UIViewController, UITableViewDelegate {
         
     }
     
-
+    @IBAction func lapResetButtonDidTap(_ sender: Any) {
+        if !isPlay {
+            resetMainTimer()
+            resetLapTimer()
+            
+            changeButton(lapResetButton, title: "Lap", titleColor: UIColor.lightGray)
+            lapResetButton.isEnabled = false
+        } else {
+            if let currentTimeText = mainTimerLabel.text {
+                laps.append(currentTimeText)
+            }
+            
+            lapsTableView.reloadData()
+            resetLapTimer()
+            
+            unowned let weakSelf = self
+            lapStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.032, target: weakSelf, selector: Selector.updateLapTimer, userInfo: nil, repeats: true)
+            RunLoop.current.add(lapStopwatch.timer, forMode: RunLoop.Mode.common)
+        }
+    }
+    
 
     // MARK: - Methods
     private func changeButton(_ button: UIButton, title: String, titleColor: UIColor) {
@@ -89,6 +109,22 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         label.text = "\(minutes):\(seconds)"
         
+    }
+    
+    private func resetMainTimer() {
+        resetTimer(mainStopwatch, label: mainTimerLabel)
+        laps.removeAll()
+        lapsTableView.reloadData()
+    }
+    
+    private func resetLapTimer() {
+        resetTimer(lapStopwatch, label: lapTimerLabel)
+    }
+    
+    private func resetTimer(_ stopwatch: Stopwatch, label: UILabel) {
+        stopwatch.timer.invalidate()
+        stopwatch.counter = 0.0
+        label.text = "00:00.00"
     }
     
 }
