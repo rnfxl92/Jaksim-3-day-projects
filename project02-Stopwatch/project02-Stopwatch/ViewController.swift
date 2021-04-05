@@ -42,8 +42,8 @@ class ViewController: UIViewController, UITableViewDelegate {
         if !isPlay {
             unowned let weakSelf = self
             
-            mainStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.016, target: weakSelf, selector: Selector.updateMainTimer, userInfo: nil, repeats: true)
-            lapStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.016, target: weakSelf, selector: Selector.updateLapTimer, userInfo: nil, repeats: true)
+            mainStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.032, target: weakSelf, selector: Selector.updateMainTimer, userInfo: nil, repeats: true)
+            lapStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.032, target: weakSelf, selector: Selector.updateLapTimer, userInfo: nil, repeats: true)
             
             RunLoop.current.add(mainStopwatch.timer, forMode: RunLoop.Mode.common)
             RunLoop.current.add(lapStopwatch.timer, forMode: RunLoop.Mode.common)
@@ -78,11 +78,14 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
     
     private func updateTimer(_ stopwatch: Stopwatch, label: UILabel) {
-        stopwatch.counter = stopwatch.counter + 0.016
+        stopwatch.counter = stopwatch.counter + 0.032
         
         let minutes: String = String(format: "%02d", (Int)(stopwatch.counter / 60))
         
-        let seconds: String = String(format: "%02.2f",(stopwatch.counter.truncatingRemainder(dividingBy: 60)))
+        var seconds: String = String(format: "%.2f",(stopwatch.counter.truncatingRemainder(dividingBy: 60)))
+        if stopwatch.counter.truncatingRemainder(dividingBy: 60) < 10 {
+            seconds = "0" + seconds
+        }
         
         label.text = "\(minutes):\(seconds)"
         
