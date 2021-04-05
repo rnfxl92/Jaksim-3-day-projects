@@ -13,6 +13,8 @@
 		34747CF0261ADA7B0066EB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34747CEE261ADA7B0066EB00 /* Main.storyboard */; };
 		34747CF2261ADA7C0066EB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34747CF1261ADA7C0066EB00 /* Assets.xcassets */; };
 		34747CF5261ADA7C0066EB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34747CF3261ADA7C0066EB00 /* LaunchScreen.storyboard */; };
+		34747D00261AE1000066EB00 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34747CFF261AE1000066EB00 /* Stopwatch.swift */; };
+		34747D03261AEED20066EB00 /* Selector+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34747D02261AEED20066EB00 /* Selector+Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		34747CF1261ADA7C0066EB00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34747CF4261ADA7C0066EB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34747CF6261ADA7C0066EB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34747CFF261AE1000066EB00 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		34747D02261AEED20066EB00 /* Selector+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selector+Timer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				34747CE8261ADA7B0066EB00 /* AppDelegate.swift */,
 				34747CEA261ADA7B0066EB00 /* SceneDelegate.swift */,
 				34747CEC261ADA7B0066EB00 /* ViewController.swift */,
+				34747D02261AEED20066EB00 /* Selector+Timer.swift */,
+				34747CFF261AE1000066EB00 /* Stopwatch.swift */,
 				34747CEE261ADA7B0066EB00 /* Main.storyboard */,
 				34747CF1261ADA7C0066EB00 /* Assets.xcassets */,
 				34747CF3261ADA7C0066EB00 /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			files = (
 				34747CED261ADA7B0066EB00 /* ViewController.swift in Sources */,
 				34747CE9261ADA7B0066EB00 /* AppDelegate.swift in Sources */,
+				34747D03261AEED20066EB00 /* Selector+Timer.swift in Sources */,
 				34747CEB261ADA7B0066EB00 /* SceneDelegate.swift in Sources */,
+				34747D00261AE1000066EB00 /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

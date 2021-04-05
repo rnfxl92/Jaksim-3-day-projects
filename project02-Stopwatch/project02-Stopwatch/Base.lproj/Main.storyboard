@@ -50,26 +50,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bsq-UM-Ti3">
                                 <rect key="frame" x="0.0" y="313" width="414" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy8-sJ-jLK">
-                                        <rect key="frame" x="120.5" y="52" width="33" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" systemColor="systemBlueColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUK-1t-UWl">
-                                        <rect key="frame" x="255.5" y="52" width="43" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" systemColor="systemGreenColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe4-98-ost">
+                                        <rect key="frame" x="117.5" y="43.5" width="39" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Lap"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IQ-3z-qid">
+                                        <rect key="frame" x="252" y="43.5" width="50" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" systemColor="systemGreenColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playPauseButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhs-Ai-YDI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="TUK-1t-UWl" firstAttribute="centerX" secondItem="Bsq-UM-Ti3" secondAttribute="centerX" constant="70" id="ISt-S7-uZb"/>
-                                    <constraint firstItem="Vy8-sJ-jLK" firstAttribute="centerX" secondItem="Bsq-UM-Ti3" secondAttribute="centerX" constant="-70" id="OZL-HU-yyB"/>
-                                    <constraint firstItem="Vy8-sJ-jLK" firstAttribute="centerY" secondItem="Bsq-UM-Ti3" secondAttribute="centerY" id="StF-Xn-f45"/>
-                                    <constraint firstItem="TUK-1t-UWl" firstAttribute="centerY" secondItem="Bsq-UM-Ti3" secondAttribute="centerY" id="aAL-st-EGD"/>
+                                    <constraint firstItem="qe4-98-ost" firstAttribute="centerY" secondItem="Bsq-UM-Ti3" secondAttribute="centerY" id="8It-eJ-S3x"/>
+                                    <constraint firstItem="0IQ-3z-qid" firstAttribute="centerY" secondItem="Bsq-UM-Ti3" secondAttribute="centerY" id="Q5l-ea-6z3"/>
                                     <constraint firstAttribute="height" constant="128" id="bTB-1a-suJ"/>
+                                    <constraint firstItem="0IQ-3z-qid" firstAttribute="centerX" secondItem="Bsq-UM-Ti3" secondAttribute="centerX" constant="70" id="mzg-SG-ZQQ"/>
+                                    <constraint firstItem="qe4-98-ost" firstAttribute="centerX" secondItem="Bsq-UM-Ti3" secondAttribute="centerX" constant="-70" id="rgQ-Gu-Okh"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jxx-Dt-VAi">
@@ -104,6 +107,13 @@
                             <constraint firstItem="Jxx-Dt-VAi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zbK-cQ-MwD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lapResetButton" destination="qe4-98-ost" id="FsF-cf-vfc"/>
+                        <outlet property="lapTimerLabel" destination="sBO-PD-IoA" id="kdN-3Y-5Fz"/>
+                        <outlet property="lapsTableView" destination="Jxx-Dt-VAi" id="1kt-De-GX3"/>
+                        <outlet property="mainTimerLabel" destination="OMD-Br-jIU" id="eny-Dv-2UQ"/>
+                        <outlet property="startPauseButton" destination="0IQ-3z-qid" id="Iop-U0-3lE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,9 +123,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
