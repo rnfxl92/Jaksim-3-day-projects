@@ -10,7 +10,6 @@
 		3471AB25261C87AB00762CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471AB24261C87AB00762CD9 /* AppDelegate.swift */; };
 		3471AB27261C87AB00762CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471AB26261C87AB00762CD9 /* SceneDelegate.swift */; };
 		3471AB29261C87AB00762CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471AB28261C87AB00762CD9 /* ViewController.swift */; };
-		3471AB2C261C87AB00762CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3471AB2A261C87AB00762CD9 /* Main.storyboard */; };
 		3471AB2E261C87AD00762CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3471AB2D261C87AD00762CD9 /* Assets.xcassets */; };
 		3471AB31261C87AD00762CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3471AB2F261C87AD00762CD9 /* LaunchScreen.storyboard */; };
 		3471AB3D261C887700762CD9 /* FBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471AB3C261C887700762CD9 /* FBUser.swift */; };
@@ -18,6 +17,7 @@
 		3471AB45261C8B6E00762CD9 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471AB44261C8B6E00762CD9 /* Specs.swift */; };
 		3471AB48261C8BAB00762CD9 /* UIColor+HexInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471AB47261C8BAB00762CD9 /* UIColor+HexInit.swift */; };
 		349E530D261D8F850067AB0A /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E530C261D8F850067AB0A /* TableKeys.swift */; };
+		349E5312261DAF110067AB0A /* FBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E5311261DAF110067AB0A /* FBTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,6 @@
 		3471AB24261C87AB00762CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3471AB26261C87AB00762CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3471AB28261C87AB00762CD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3471AB2B261C87AB00762CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3471AB2D261C87AD00762CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3471AB30261C87AD00762CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3471AB32261C87AD00762CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		3471AB44261C8B6E00762CD9 /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
 		3471AB47261C8BAB00762CD9 /* UIColor+HexInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexInit.swift"; sourceTree = "<group>"; };
 		349E530C261D8F850067AB0A /* TableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
+		349E5311261DAF110067AB0A /* FBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,6 @@
 				3471AB24261C87AB00762CD9 /* AppDelegate.swift */,
 				3471AB26261C87AB00762CD9 /* SceneDelegate.swift */,
 				3471AB28261C87AB00762CD9 /* ViewController.swift */,
-				3471AB2A261C87AB00762CD9 /* Main.storyboard */,
 				3471AB2D261C87AD00762CD9 /* Assets.xcassets */,
 				3471AB2F261C87AD00762CD9 /* LaunchScreen.storyboard */,
 				3471AB32261C87AD00762CD9 /* Info.plist */,
@@ -91,6 +90,7 @@
 		3471AB3B261C884700762CD9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				349E5310261DAEE50067AB0A /* View */,
 				3471AB40261C8B2A00762CD9 /* FBViewController.swift */,
 			);
 			path = ViewController;
@@ -104,6 +104,14 @@
 				349E530C261D8F850067AB0A /* TableKeys.swift */,
 			);
 			path = ETC;
+			sourceTree = "<group>";
+		};
+		349E5310261DAEE50067AB0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				349E5311261DAF110067AB0A /* FBTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +173,6 @@
 			files = (
 				3471AB31261C87AD00762CD9 /* LaunchScreen.storyboard in Resources */,
 				3471AB2E261C87AD00762CD9 /* Assets.xcassets in Resources */,
-				3471AB2C261C87AB00762CD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +188,7 @@
 				3471AB25261C87AB00762CD9 /* AppDelegate.swift in Sources */,
 				3471AB41261C8B2A00762CD9 /* FBViewController.swift in Sources */,
 				3471AB48261C8BAB00762CD9 /* UIColor+HexInit.swift in Sources */,
+				349E5312261DAF110067AB0A /* FBTableViewCell.swift in Sources */,
 				3471AB3D261C887700762CD9 /* FBUser.swift in Sources */,
 				349E530D261D8F850067AB0A /* TableKeys.swift in Sources */,
 				3471AB27261C87AB00762CD9 /* SceneDelegate.swift in Sources */,
@@ -190,14 +198,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3471AB2A261C87AB00762CD9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3471AB2B261C87AB00762CD9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3471AB2F261C87AD00762CD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
