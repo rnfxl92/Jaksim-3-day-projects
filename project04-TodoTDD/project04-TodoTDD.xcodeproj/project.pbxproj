@@ -18,6 +18,7 @@
 		340842AD261EFBC9005C90CE /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340842AC261EFBC9005C90CE /* ToDoItem.swift */; };
 		3455C526262033A200809FC5 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3455C525262033A200809FC5 /* LocationTests.swift */; };
 		3455C52A2620342F00809FC5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3455C5292620342F00809FC5 /* Location.swift */; };
+		3455C52D26203A6100809FC5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3455C5292620342F00809FC5 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +274,7 @@
 			files = (
 				340842A2261EF793005C90CE /* ToDoItemTests.swift in Sources */,
 				3455C526262033A200809FC5 /* LocationTests.swift in Sources */,
+				3455C52D26203A6100809FC5 /* Location.swift in Sources */,
 				34084297261EEF68005C90CE /* project04_TodoTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
