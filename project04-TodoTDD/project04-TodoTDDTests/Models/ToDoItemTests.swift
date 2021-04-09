@@ -8,25 +8,24 @@
 import XCTest
 
 class ToDoItemTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let timestamp = 0.0
+    let locationName = "Location"
+    
+    func test_init_Title() {
+        
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func test_init_Description() {
+        
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_init_TimeStamp() {
+        
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_init_Location() {
+        
     }
-
+    
+    
 }
