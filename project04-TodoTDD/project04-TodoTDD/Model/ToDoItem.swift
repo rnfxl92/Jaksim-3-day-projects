@@ -10,20 +10,24 @@ import Foundation
 struct ToDoItem {
     let title: String
     let description: String?
-    let timeStamp: Date?
-    let location: Location?
-    
-    init(title: String, description: String? = nil, timeStamp: Date? = nil, location: Location? = nil) {
+    let timeStamp: Date
+    var isDone: Bool
+
+    init(title: String, description: String? = nil, timeStamp: Date = Date(), isDone: Bool = false) {
         self.title = title
         self.description = description
         self.timeStamp = timeStamp
-        self.location = location
+        self.isDone = isDone
+
     }
     
 }
 
 extension ToDoItem: Equatable {
     static func ==(lhs: ToDoItem, rhs: ToDoItem) -> Bool {
-        return lhs.title == rhs.title && lhs.location?.name == rhs.location?.name && lhs.timeStamp == rhs.timeStamp
+        return lhs.title == rhs.title
+            && lhs.description == rhs.description
+            && lhs.timeStamp == rhs.timeStamp
+            && lhs.isDone == rhs.isDone
     }
 }

@@ -16,9 +16,6 @@
 		34084297261EEF68005C90CE /* project04_TodoTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34084296261EEF68005C90CE /* project04_TodoTDDTests.swift */; };
 		340842A2261EF793005C90CE /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340842A1261EF793005C90CE /* ToDoItemTests.swift */; };
 		340842AD261EFBC9005C90CE /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340842AC261EFBC9005C90CE /* ToDoItem.swift */; };
-		3455C526262033A200809FC5 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3455C525262033A200809FC5 /* LocationTests.swift */; };
-		3455C52A2620342F00809FC5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3455C5292620342F00809FC5 /* Location.swift */; };
-		3455C52D26203A6100809FC5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3455C5292620342F00809FC5 /* Location.swift */; };
 		3455C53026206ADE00809FC5 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340842AC261EFBC9005C90CE /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +43,6 @@
 		34084298261EEF68005C90CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		340842A1261EF793005C90CE /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		340842AC261EFBC9005C90CE /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
-		3455C525262033A200809FC5 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
-		3455C5292620342F00809FC5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				340842A1261EF793005C90CE /* ToDoItemTests.swift */,
-				3455C525262033A200809FC5 /* LocationTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				340842AC261EFBC9005C90CE /* ToDoItem.swift */,
-				3455C5292620342F00809FC5 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,7 +256,6 @@
 			files = (
 				3408427D261EEE6B005C90CE /* ViewController.swift in Sources */,
 				34084279261EEE6B005C90CE /* AppDelegate.swift in Sources */,
-				3455C52A2620342F00809FC5 /* Location.swift in Sources */,
 				340842AD261EFBC9005C90CE /* ToDoItem.swift in Sources */,
 				3408427B261EEE6B005C90CE /* SceneDelegate.swift in Sources */,
 			);
@@ -274,9 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340842A2261EF793005C90CE /* ToDoItemTests.swift in Sources */,
-				3455C526262033A200809FC5 /* LocationTests.swift in Sources */,
 				3455C53026206ADE00809FC5 /* ToDoItem.swift in Sources */,
-				3455C52D26203A6100809FC5 /* Location.swift in Sources */,
 				34084297261EEF68005C90CE /* project04_TodoTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

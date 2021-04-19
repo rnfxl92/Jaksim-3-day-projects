@@ -30,12 +30,11 @@ class ToDoItemTests: XCTestCase {
         XCTAssertEqual(toDoItem.timeStamp, timeStamp)
     }
     
-    func test_init_Location() {
-        let locationName = "Location"
-        let location = Location(name: locationName)
-        let toDoItem = ToDoItem(title: titleName, location: location)
+    func test_init_isDone() {
         
-        XCTAssertEqual(toDoItem.location, location)
+        let toDoItem = ToDoItem(title: titleName, isDone: true)
+        
+        XCTAssertEqual(toDoItem.isDone, true)
         
     }
         
