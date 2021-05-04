@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import NSObject_Rx
 
-class ViewController: UIViewController {
-
+class MemoListViewController: UIViewController,ViewModelBindableType {
+    var viewModel: MemoListViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    func bindViewModel() {
+        
+    }
 
 }
 
