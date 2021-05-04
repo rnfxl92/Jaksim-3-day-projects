@@ -47,6 +47,7 @@ class ChatRoomViewController: UIViewController {
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
+    chatRoom.stopChatSession()
 
   }
 }
@@ -54,7 +55,7 @@ class ChatRoomViewController: UIViewController {
 //MARK - Message Input Bar
 extension ChatRoomViewController: MessageInputDelegate {
   func sendWasTapped(message: String) {
-    
+    chatRoom.send(message: message)
   }
 }
 
