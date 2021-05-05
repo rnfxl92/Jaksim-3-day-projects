@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344AD2872642825E00C966DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AD2862642825E00C966DE /* AppDelegate.swift */; };
+		344AD2892642825E00C966DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AD2882642825E00C966DE /* SceneDelegate.swift */; };
+		344AD28B2642825E00C966DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AD28A2642825E00C966DE /* MainViewController.swift */; };
+		344AD28E2642825E00C966DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344AD28C2642825E00C966DE /* Main.storyboard */; };
+		344AD2902642825F00C966DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344AD28F2642825F00C966DE /* Assets.xcassets */; };
+		344AD2932642825F00C966DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344AD2912642825F00C966DE /* LaunchScreen.storyboard */; };
+		4EDFBB1897FB229216B1090E /* Pods_SocketIODogeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIODogeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIODogeChat.release.xcconfig"; path = "Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat.release.xcconfig"; sourceTree = "<group>"; };
+		33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIODogeChat.debug.xcconfig"; path = "Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		344AD2832642825E00C966DE /* SocketIODogeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketIODogeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344AD2862642825E00C966DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		344AD2882642825E00C966DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		344AD28A2642825E00C966DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		344AD28D2642825E00C966DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		344AD28F2642825F00C966DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		344AD2922642825F00C966DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		344AD2942642825F00C966DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344AD2802642825E00C966DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EDFBB1897FB229216B1090E /* Pods_SocketIODogeChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23EDA9044F43BCF16324D242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */,
+				24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		344AD27A2642825E00C966DE = {
+			isa = PBXGroup;
+			children = (
+				344AD2852642825E00C966DE /* SocketIODogeChat */,
+				344AD2842642825E00C966DE /* Products */,
+				23EDA9044F43BCF16324D242 /* Pods */,
+				782ABC5BA2092819BFBB2142 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		344AD2842642825E00C966DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344AD2832642825E00C966DE /* SocketIODogeChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344AD2852642825E00C966DE /* SocketIODogeChat */ = {
+			isa = PBXGroup;
+			children = (
+				344AD2862642825E00C966DE /* AppDelegate.swift */,
+				344AD2882642825E00C966DE /* SceneDelegate.swift */,
+				344AD28A2642825E00C966DE /* MainViewController.swift */,
+				344AD28C2642825E00C966DE /* Main.storyboard */,
+				344AD28F2642825F00C966DE /* Assets.xcassets */,
+				344AD2912642825F00C966DE /* LaunchScreen.storyboard */,
+				344AD2942642825F00C966DE /* Info.plist */,
+			);
+			path = SocketIODogeChat;
+			sourceTree = "<group>";
+		};
+		782ABC5BA2092819BFBB2142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344AD2822642825E00C966DE /* SocketIODogeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344AD2972642825F00C966DE /* Build configuration list for PBXNativeTarget "SocketIODogeChat" */;
+			buildPhases = (
+				233948D35705DB4706634FB4 /* [CP] Check Pods Manifest.lock */,
+				344AD27F2642825E00C966DE /* Sources */,
+				344AD2802642825E00C966DE /* Frameworks */,
+				344AD2812642825E00C966DE /* Resources */,
+				2469DAD0C2955BDA22FF5633 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketIODogeChat;
+			productName = SocketIODogeChat;
+			productReference = 344AD2832642825E00C966DE /* SocketIODogeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344AD27B2642825E00C966DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					344AD2822642825E00C966DE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 344AD27E2642825E00C966DE /* Build configuration list for PBXProject "SocketIODogeChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 344AD27A2642825E00C966DE;
+			productRefGroup = 344AD2842642825E00C966DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344AD2822642825E00C966DE /* SocketIODogeChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344AD2812642825E00C966DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344AD2932642825F00C966DE /* LaunchScreen.storyboard in Resources */,
+				344AD2902642825F00C966DE /* Assets.xcassets in Resources */,
+				344AD28E2642825E00C966DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233948D35705DB4706634FB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocketIODogeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2469DAD0C2955BDA22FF5633 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344AD27F2642825E00C966DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344AD28B2642825E00C966DE /* MainViewController.swift in Sources */,
+				344AD2872642825E00C966DE /* AppDelegate.swift in Sources */,
+				344AD2892642825E00C966DE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		344AD28C2642825E00C966DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344AD28D2642825E00C966DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		344AD2912642825F00C966DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344AD2922642825F00C966DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		344AD2952642825F00C966DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		344AD2962642825F00C966DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344AD2982642825F00C966DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WAJS5YV8W;
+				INFOPLIST_FILE = SocketIODogeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SungminPark.SocketIODogeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344AD2992642825F00C966DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WAJS5YV8W;
+				INFOPLIST_FILE = SocketIODogeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SungminPark.SocketIODogeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344AD27E2642825E00C966DE /* Build configuration list for PBXProject "SocketIODogeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344AD2952642825F00C966DE /* Debug */,
+				344AD2962642825F00C966DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344AD2972642825F00C966DE /* Build configuration list for PBXNativeTarget "SocketIODogeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344AD2982642825F00C966DE /* Debug */,
+				344AD2992642825F00C966DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344AD27B2642825E00C966DE /* Project object */;
+}
