@@ -13,6 +13,9 @@
 		344AD28E2642825E00C966DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344AD28C2642825E00C966DE /* Main.storyboard */; };
 		344AD2902642825F00C966DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344AD28F2642825F00C966DE /* Assets.xcassets */; };
 		344AD2932642825F00C966DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344AD2912642825F00C966DE /* LaunchScreen.storyboard */; };
+		34D9FC4F2643B81B0043E37B /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9FC4E2643B81B0043E37B /* MessageSender.swift */; };
+		34D9FC512643B8E70043E37B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9FC502643B8E70043E37B /* Message.swift */; };
+		34D9FC542643BABB0043E37B /* String+withoutWhitespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9FC532643BABB0043E37B /* String+withoutWhitespace.swift */; };
 		4EDFBB1897FB229216B1090E /* Pods_SocketIODogeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		344AD28F2642825F00C966DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344AD2922642825F00C966DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344AD2942642825F00C966DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D9FC4E2643B81B0043E37B /* MessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
+		34D9FC502643B8E70043E37B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		34D9FC532643BABB0043E37B /* String+withoutWhitespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+withoutWhitespace.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		344AD2852642825E00C966DE /* SocketIODogeChat */ = {
 			isa = PBXGroup;
 			children = (
+				34D9FC522643BA8E0043E37B /* Extensions */,
+				34D9FC4D2643B7A50043E37B /* Model */,
 				344AD2862642825E00C966DE /* AppDelegate.swift */,
 				344AD2882642825E00C966DE /* SceneDelegate.swift */,
 				344AD28A2642825E00C966DE /* MainViewController.swift */,
@@ -81,6 +89,23 @@
 				344AD2942642825F00C966DE /* Info.plist */,
 			);
 			path = SocketIODogeChat;
+			sourceTree = "<group>";
+		};
+		34D9FC4D2643B7A50043E37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34D9FC4E2643B81B0043E37B /* MessageSender.swift */,
+				34D9FC502643B8E70043E37B /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34D9FC522643BA8E0043E37B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34D9FC532643BABB0043E37B /* String+withoutWhitespace.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		782ABC5BA2092819BFBB2142 /* Frameworks */ = {
@@ -205,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D9FC542643BABB0043E37B /* String+withoutWhitespace.swift in Sources */,
+				34D9FC4F2643B81B0043E37B /* MessageSender.swift in Sources */,
 				344AD28B2642825E00C966DE /* MainViewController.swift in Sources */,
+				34D9FC512643B8E70043E37B /* Message.swift in Sources */,
 				344AD2872642825E00C966DE /* AppDelegate.swift in Sources */,
 				344AD2892642825E00C966DE /* SceneDelegate.swift in Sources */,
 			);
