@@ -14,9 +14,19 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        nameTextField.delegate = self
     }
 
-
+    @IBAction func joinButtonDidTap(_ sender: Any) {
+    }
+    
+    func chatRoomView() {
+        
+    }
+    
+    
 }
 
+extension MainViewController: UITextFieldDelegate {
+    
+}
