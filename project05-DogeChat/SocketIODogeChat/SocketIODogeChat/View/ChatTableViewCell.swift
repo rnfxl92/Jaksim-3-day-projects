@@ -1,5 +1,5 @@
 //
-//  chatTableViewCell.swift
+//  ChatTableViewCell.swift
 //  SocketIODogeChat
 //
 //  Created by 박성민 on 2021/05/06.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class chatTableViewCell: UITableViewCell {
+class ChatTableViewCell: UITableViewCell {
     var messageSender: MessageSender = .ourself
     let messageLabel = ChatLabel()
     let nameLabel = UILabel()
