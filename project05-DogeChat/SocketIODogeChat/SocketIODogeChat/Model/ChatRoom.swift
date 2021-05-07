@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SocketIO
 
 protocol ChatRoomDelegate: AnyObject {
   func received(message: Message)

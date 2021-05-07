@@ -12,18 +12,33 @@ class ChatRoomViewController: UIViewController {
     @IBOutlet weak var chatTextField: UITextField!
     var username = ""
     var messages: [Message] = []
+    let chatRoom = ChatRoom()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         chatTableView.delegate = self
         chatTableView.dataSource = self
+        chatRoom.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        chatRoom.setupNetworkCommunication()
+        chatRoom.joinChat(username: username)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        chatRoom.stopChatSession()
     }
     
     @IBAction func chatButtonDidTap(_ sender: Any) {
+        guard let message = chatTextField.text else {
+            return
+        }
+        chatRoom.send(message: message)
+        chatTextField.text = ""
     }
     
 }
@@ -56,5 +71,11 @@ extension ChatRoomViewController: UITableViewDelegate, UITableViewDataSource {
         chatTableView.insertRows(at: [indexPath], with: .bottom)
         chatTableView.endUpdates()
         chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+    }
+}
+
+extension ChatRoomViewController: ChatRoomDelegate {
+    func received(message: Message) {
+        insertNewMessageCell(message)
     }
 }
