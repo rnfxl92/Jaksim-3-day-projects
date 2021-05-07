@@ -9,5 +9,5 @@ import Foundation
 
 enum MessageSender {
     case ourself
-    case someElse
+    case someoneElse
 }

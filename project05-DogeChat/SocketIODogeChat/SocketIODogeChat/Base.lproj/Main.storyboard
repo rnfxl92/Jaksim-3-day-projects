@@ -94,7 +94,7 @@
         <!--Chat Room View Controller-->
         <scene sceneID="hBS-1p-T5p">
             <objects>
-                <viewController id="n2C-Nx-0WI" customClass="ChatRoomViewController" customModule="SocketIODogeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatRoomVC" id="n2C-Nx-0WI" customClass="ChatRoomViewController" customModule="SocketIODogeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cro-WA-eTI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

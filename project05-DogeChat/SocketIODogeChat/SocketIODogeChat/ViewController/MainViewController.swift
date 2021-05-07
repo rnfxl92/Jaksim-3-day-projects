@@ -18,15 +18,24 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func joinButtonDidTap(_ sender: Any) {
+        pushChatRoomView()
     }
     
-    func chatRoomView() {
-        
+    func pushChatRoomView() {
+        guard let chatRoomVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "chatRoomVC") as? ChatRoomViewController else {
+            return
+        }
+        if let username = nameTextField.text {
+            chatRoomVC.username = username
+        }
+        navigationController?.pushViewController(chatRoomVC, animated: true)
     }
-    
     
 }
 
 extension MainViewController: UITextFieldDelegate {
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushChatRoomView()
+        return true
+    }
 }

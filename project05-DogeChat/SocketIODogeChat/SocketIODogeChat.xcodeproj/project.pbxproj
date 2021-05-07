@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3432B3F726452B05000599CF /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432B3F626452B05000599CF /* ChatRoom.swift */; };
 		344AD2872642825E00C966DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AD2862642825E00C966DE /* AppDelegate.swift */; };
 		344AD2892642825E00C966DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AD2882642825E00C966DE /* SceneDelegate.swift */; };
 		344AD28B2642825E00C966DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344AD28A2642825E00C966DE /* MainViewController.swift */; };
@@ -26,6 +27,7 @@
 		1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIODogeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIODogeChat.release.xcconfig"; path = "Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat.release.xcconfig"; sourceTree = "<group>"; };
 		33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIODogeChat.debug.xcconfig"; path = "Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		3432B3F626452B05000599CF /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		344AD2832642825E00C966DE /* SocketIODogeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketIODogeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344AD2862642825E00C966DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344AD2882642825E00C966DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				34D9FC4E2643B81B0043E37B /* MessageSender.swift */,
 				34D9FC502643B8E70043E37B /* Message.swift */,
+				3432B3F626452B05000599CF /* ChatRoom.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				34D9FC512643B8E70043E37B /* Message.swift in Sources */,
 				34D9FC5A2643E5DD0043E37B /* chatTableViewCell.swift in Sources */,
 				344AD2872642825E00C966DE /* AppDelegate.swift in Sources */,
+				3432B3F726452B05000599CF /* ChatRoom.swift in Sources */,
 				344AD2892642825E00C966DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
