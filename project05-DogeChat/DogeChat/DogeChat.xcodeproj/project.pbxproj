@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,16 +21,12 @@
 		34D9FC572643D9F90043E37B /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9FC562643D9F90043E37B /* ChatRoomViewController.swift */; };
 		34D9FC5A2643E5DD0043E37B /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9FC592643E5DD0043E37B /* ChatTableViewCell.swift */; };
 		34D9FC5C2643E8540043E37B /* ChatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9FC5B2643E8540043E37B /* ChatLabel.swift */; };
-		4EDFBB1897FB229216B1090E /* Pods_SocketIODogeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIODogeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIODogeChat.release.xcconfig"; path = "Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat.release.xcconfig"; sourceTree = "<group>"; };
-		33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIODogeChat.debug.xcconfig"; path = "Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		3432B3F626452B05000599CF /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		3432B3F826457ED9000599CF /* ChatTableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatTableViewCell+.swift"; sourceTree = "<group>"; };
-		344AD2832642825E00C966DE /* SocketIODogeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketIODogeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344AD2832642825E00C966DE /* DogeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344AD2862642825E00C966DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344AD2882642825E00C966DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		344AD28A2642825E00C966DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -51,41 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDFBB1897FB229216B1090E /* Pods_SocketIODogeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23EDA9044F43BCF16324D242 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */,
-				24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		344AD27A2642825E00C966DE = {
 			isa = PBXGroup;
 			children = (
-				344AD2852642825E00C966DE /* SocketIODogeChat */,
+				344AD2852642825E00C966DE /* DogeChat */,
 				344AD2842642825E00C966DE /* Products */,
-				23EDA9044F43BCF16324D242 /* Pods */,
-				782ABC5BA2092819BFBB2142 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		344AD2842642825E00C966DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				344AD2832642825E00C966DE /* SocketIODogeChat.app */,
+				344AD2832642825E00C966DE /* DogeChat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		344AD2852642825E00C966DE /* SocketIODogeChat */ = {
+		344AD2852642825E00C966DE /* DogeChat */ = {
 			isa = PBXGroup;
 			children = (
 				34D9FC582643E5A00043E37B /* View */,
@@ -99,7 +83,7 @@
 				344AD2912642825F00C966DE /* LaunchScreen.storyboard */,
 				344AD2942642825F00C966DE /* Info.plist */,
 			);
-			path = SocketIODogeChat;
+			path = DogeChat;
 			sourceTree = "<group>";
 		};
 		34D9FC4D2643B7A50043E37B /* Model */ = {
@@ -139,34 +123,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		782ABC5BA2092819BFBB2142 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1D5390A3F463ADEA8FDE3620 /* Pods_SocketIODogeChat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		344AD2822642825E00C966DE /* SocketIODogeChat */ = {
+		344AD2822642825E00C966DE /* DogeChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 344AD2972642825F00C966DE /* Build configuration list for PBXNativeTarget "SocketIODogeChat" */;
+			buildConfigurationList = 344AD2972642825F00C966DE /* Build configuration list for PBXNativeTarget "DogeChat" */;
 			buildPhases = (
-				233948D35705DB4706634FB4 /* [CP] Check Pods Manifest.lock */,
 				344AD27F2642825E00C966DE /* Sources */,
 				344AD2802642825E00C966DE /* Frameworks */,
 				344AD2812642825E00C966DE /* Resources */,
-				2469DAD0C2955BDA22FF5633 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SocketIODogeChat;
+			name = DogeChat;
 			productName = SocketIODogeChat;
-			productReference = 344AD2832642825E00C966DE /* SocketIODogeChat.app */;
+			productReference = 344AD2832642825E00C966DE /* DogeChat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 344AD27E2642825E00C966DE /* Build configuration list for PBXProject "SocketIODogeChat" */;
+			buildConfigurationList = 344AD27E2642825E00C966DE /* Build configuration list for PBXProject "DogeChat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -196,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				344AD2822642825E00C966DE /* SocketIODogeChat */,
+				344AD2822642825E00C966DE /* DogeChat */,
 			);
 		};
 /* End PBXProject section */
@@ -213,48 +187,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		233948D35705DB4706634FB4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocketIODogeChat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2469DAD0C2955BDA22FF5633 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocketIODogeChat/Pods-SocketIODogeChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		344AD27F2642825E00C966DE /* Sources */ = {
@@ -415,18 +347,17 @@
 		};
 		344AD2982642825F00C966DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33041FF36B0ACA4C8F37D7D5 /* Pods-SocketIODogeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WAJS5YV8W;
-				INFOPLIST_FILE = SocketIODogeChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DogeChat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SungminPark.SocketIODogeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = SungminPark.DogeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,18 +366,17 @@
 		};
 		344AD2992642825F00C966DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24837E110D0FA47BE4E12816 /* Pods-SocketIODogeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WAJS5YV8W;
-				INFOPLIST_FILE = SocketIODogeChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DogeChat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SungminPark.SocketIODogeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = SungminPark.DogeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,7 +386,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		344AD27E2642825E00C966DE /* Build configuration list for PBXProject "SocketIODogeChat" */ = {
+		344AD27E2642825E00C966DE /* Build configuration list for PBXProject "DogeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				344AD2952642825F00C966DE /* Debug */,
@@ -465,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		344AD2972642825F00C966DE /* Build configuration list for PBXNativeTarget "SocketIODogeChat" */ = {
+		344AD2972642825F00C966DE /* Build configuration list for PBXNativeTarget "DogeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				344AD2982642825F00C966DE /* Debug */,
