@@ -30,16 +30,17 @@ class ArtistListViewController: UIViewController {
     
 }
 
-extension ArtistListViewController: UITableViewDataSource {
+extension ArtistListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return artists.count
+        return artists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ArtistTableViewCell
-      
-      let artist = artists[indexPath.row]
-      
-      return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "artistCell", for: indexPath) as! ArtistTableViewCell
+        
+        let artist = artists[indexPath.row]
+        cell.configure(artist: artist)
+        
+        return cell
     }
 }

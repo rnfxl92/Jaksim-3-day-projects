@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="277" id="Elx-Qe-wjX">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="workCell" rowHeight="277" id="Elx-Qe-wjX">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="277"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Elx-Qe-wjX" id="eoW-yH-9Gq">
@@ -113,36 +113,37 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="180" id="hQQ-jU-jXf" customClass="ArtistTableViewCell" customModule="project06_Artistry" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="artistCell" rowHeight="180" id="hQQ-jU-jXf" customClass="ArtistTableViewCell" customModule="project06_Artistry" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQQ-jU-jXf" id="luw-cR-lgP">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lt7-2Z-bjP">
-                                                    <rect key="frame" x="16" y="11" width="187.5" height="127"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lt7-2Z-bjP">
+                                                    <rect key="frame" x="16" y="11" width="169" height="131"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-MI-QIR">
-                                                    <rect key="frame" x="213.5" y="11" width="135.5" height="158"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-MI-QIR">
+                                                    <rect key="frame" x="195" y="11" width="154" height="158"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUR-tb-Not">
-                                                    <rect key="frame" x="16" y="148" width="187.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUR-tb-Not">
+                                                    <rect key="frame" x="16" y="152" width="169" height="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wUR-tb-Not" firstAttribute="leading" secondItem="luw-cR-lgP" secondAttribute="leadingMargin" id="FT7-h0-xHf"/>
+                                                <constraint firstItem="wUR-tb-Not" firstAttribute="bottom" secondItem="luw-cR-lgP" secondAttribute="bottomMargin" priority="250" id="JDk-la-Vgw"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BeK-MI-QIR" secondAttribute="trailing" constant="10" id="MGz-Q3-tCP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BeK-MI-QIR" secondAttribute="bottom" id="O6s-zK-QMe"/>
                                                 <constraint firstItem="lt7-2Z-bjP" firstAttribute="leading" secondItem="luw-cR-lgP" secondAttribute="leadingMargin" id="UKa-3Y-j4z"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="wUR-tb-Not" secondAttribute="bottom" id="XrD-QE-1qj"/>
-                                                <constraint firstItem="lt7-2Z-bjP" firstAttribute="width" secondItem="luw-cR-lgP" secondAttribute="width" multiplier="0.5" id="dCd-0g-cbO"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="wUR-tb-Not" secondAttribute="bottom" id="XrD-QE-1qj"/>
+                                                <constraint firstItem="lt7-2Z-bjP" firstAttribute="width" secondItem="luw-cR-lgP" secondAttribute="width" multiplier="0.45" id="dCd-0g-cbO"/>
                                                 <constraint firstItem="wUR-tb-Not" firstAttribute="top" secondItem="lt7-2Z-bjP" secondAttribute="bottom" constant="10" id="dv6-5f-b7I"/>
                                                 <constraint firstItem="BeK-MI-QIR" firstAttribute="leading" secondItem="wUR-tb-Not" secondAttribute="trailing" constant="10" id="eed-Qc-4Uc"/>
                                                 <constraint firstItem="lt7-2Z-bjP" firstAttribute="top" secondItem="luw-cR-lgP" secondAttribute="topMargin" id="elo-u5-cWU"/>
@@ -151,6 +152,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="artistImageView" destination="lt7-2Z-bjP" id="c0L-He-Ogu"/>
+                                            <outlet property="bioLabel" destination="BeK-MI-QIR" id="P87-uk-thJ"/>
+                                            <outlet property="nameLabel" destination="wUR-tb-Not" id="wim-6O-x3K"/>
                                             <segue destination="Jat-Ed-SHQ" kind="show" id="ucq-7g-1gV"/>
                                         </connections>
                                     </tableViewCell>
