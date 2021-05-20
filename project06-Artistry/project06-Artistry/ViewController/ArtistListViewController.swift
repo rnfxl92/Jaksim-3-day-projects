@@ -25,7 +25,10 @@ class ArtistListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //if let destination = segue.description as?
+        if let destination = segue.destination as? ArtistDetailViewController,
+           let indexPath = artistTableView.indexPathForSelectedRow {
+            destination.selectedArtist = artists[indexPath.row]
+        }
     }
     
 }
@@ -36,7 +39,9 @@ extension ArtistListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "artistCell", for: indexPath) as! ArtistTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "artistCell", for: indexPath) as? ArtistTableViewCell else {
+            return UITableViewCell()
+        }
         
         let artist = artists[indexPath.row]
         cell.configure(artist: artist)
